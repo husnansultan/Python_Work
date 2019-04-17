@@ -1,3 +1,5 @@
+#PYTHON OOP TRIALS
+
 # Parent class
 class Pets:
 
@@ -5,6 +7,10 @@ class Pets:
 
     def __init__(self, dogs):
         self.dogs = dogs
+        
+    def walk(self):
+        for dog in self.dogs:
+            print(dog.walk())
 
 
 # Parent class
@@ -17,6 +23,7 @@ class Dog:
     def __init__(self, name, age):
         self.name = name
         self.age = age
+        self.is_hungry = True
 
     # Instance method
     def description(self):
@@ -29,6 +36,10 @@ class Dog:
     # Instance method
     def eat(self):
         self.is_hungry = False
+        
+     # Instance method
+    def walk(self):
+        return "%s is walking" % (self.name)
 
 
 # Child class (inherits from Dog class)
@@ -58,3 +69,15 @@ for dog in my_pets.dogs:
     print("{} is {}.".format(dog.name, dog.age))
 
 print("And they're all {}s, of course.".format(dog.species))
+
+are_my_dogs_hungry = False
+for dog in my_pets.dogs:
+    if dog.is_hungry:
+        are_my_dogs_hungry = True
+
+if are_my_dogs_hungry:
+    print("My dogs are hungry.")
+else:
+    print("My dogs are not hungry.")
+    
+my_pets.walk()

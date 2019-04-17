@@ -1,0 +1,40 @@
+####LINK : https://realpython.com/python3-object-oriented-programming/
+
+Answer the following questions about OOP to check your learning progress:
+
+What’s a class?
+create new user-defined data structures. It contains data as well as the methods used to process that data.
+
+What’s an instance?
+an object aka copy of a class.
+
+What’s the relationship between a class and an instance?
+instance is an Object of the class.
+
+What’s the Python syntax used for defining a new class?
+class classname:
+
+What’s the spelling convention for a class name?
+Camel Case.
+
+How do you instantiate, or create an instance of, a class?
+Of class pets()
+and Intsance would be my_pets = pets()
+
+How do you access the attributes and behaviors of a class instance?
+from the methods defined inside the class. using dot notation . eg - my_pets.sound
+
+What’s a method?
+A function that’s defined inside a class.
+
+What’s the purpose of self?
+used to refer to current instance of object (class)
+
+What’s the purpose of the __init__ method?
+allows initizialization of instances of classs
+
+Describe how inheritance helps prevent code duplication.
+Child classes inherit all of the parent’s attributes and behaviors.
+
+Can child classes override properties of their parents?
+yes.
